@@ -13,7 +13,7 @@ const request = require('request');
 // const { list } = require('parser');
 const { Strategy } = require('passport-google-oauth20');
 const app = express();
-const port = 3000;
+const port = process.env.PORT|| 3000;
 
 app.use(express.json());
 app.set('view engine', 'ejs');
