@@ -625,7 +625,7 @@ app.get("/ShareLog-Analysis", (req, res)=>{
             getThemeById(googleClientId)
             .then(theme => {
                 themeThis= theme;
-                res.render("ShareLog-Analysis.ejs", 
+                res.render("Sharelog-Analysis.ejs", 
                 {
                     theme: themeThis,
                     imgSrc: req.session.passport.user.profile_pic,
